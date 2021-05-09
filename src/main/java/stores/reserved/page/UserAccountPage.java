@@ -9,7 +9,7 @@ import utils.Wait;
 
 public class UserAccountPage {
 
-	@FindBy(xpath = "/html/body/div[1]/section/div[2]/div/form/nav/ul/li[1]/a|/html/body/div[1]/section/div[2]/nav/ul/li[1]/a")
+	@FindBy(xpath = "//*[@id='customerAccount']/div/div[1]/ul/li/ul/li[1]/a")
 	private WebElement userAccountPage;
 
 	private final CustomFluentWait customFluentWait;

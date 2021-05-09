@@ -23,4 +23,6 @@ public class CommonTestSteps {
 		manager.getLoginPage().loginUser(email, password);
 	}
 
+	public void closeNewsletterPopUp() {
+		manager.getUserMenuPage().clickAccountIcon(); }
 }

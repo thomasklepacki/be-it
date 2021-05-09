@@ -11,6 +11,7 @@ public class PageObjectManager {
 	private LoginPage loginPage;
 	private UserMenuPage userMenuPage;
 	private UserAccountPage userAccountPage;
+	private NewsletterPopUpPage newsletterPopUpPage;
 
 	public PageObjectManager(WebDriver driver) {
 		this.driver = driver;
@@ -35,5 +36,12 @@ public class PageObjectManager {
 			userAccountPage = PageFactory.initElements(driver, UserAccountPage.class);
 		}
 		return userAccountPage;
+	}
+
+	public NewsletterPopUpPage getNewsletterPopUpPage() {
+		if (newsletterPopUpPage == null) {
+			newsletterPopUpPage = PageFactory.initElements(driver, NewsletterPopUpPage.class);
+		}
+		return newsletterPopUpPage;
 	}
 }
